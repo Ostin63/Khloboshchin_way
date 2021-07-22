@@ -100,10 +100,10 @@ exports.svgstack = svgstack;
 const copy = (done) => {
   src([
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/favicon/favicon.svg",
+    // "source/*.ico",
+    // "source/img/favicon/favicon.svg",
     "source/img/**/*.{jpg,png}",
-    "source/*.webmanifest"
+    // "source/*.webmanifest"
   ], {
     base: "source"
   })

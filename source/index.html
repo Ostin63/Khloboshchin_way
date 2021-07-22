@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Way</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
@@ -17,12 +21,15 @@
     </a>
     <nav>
       <ul class="header__nav">
-        <li class="header__item"></li>
-        <li class="header__item"></li>
+        <li class="header__item">О путешествии</li>
+        <li class="header__item">Цены</li>
       </ul>
-      <div class="header__phone">
-        <a class="header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </div>
+      <a class="header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a href="header__button-menu">
+        <svg class="header__svg-menu" role="img" width="30" height="30" alt="меню">
+          <use xlink:href="img/stack.svg#menu"></use>
+        </svg>
+      </a>
     </nav>
   </header>
 
@@ -243,8 +250,7 @@
       <a class="prices__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
       <ul class="prices__list">
         <li class="prices__cart">
-          <h2 class="prices__cart-title">Комплексный</h2>
-          <span>$1999</span>
+          <h2 class="prices__cart-title">Комплексный<br><span>$1999</span></h2>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__cart-list">
             <li class="prices__cart-iterm">
@@ -263,8 +269,7 @@
           <a class="prices__cart-button" href="#">купить тур сейчас</a>
         </li>
         <li class="prices__cart">
-          <h2 class="prices__cart-title">Экономный</h2>
-          <span>$1399</span>
+          <h2 class="prices__cart-title">Экономный<br><span>$1399</span></h2>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__cart-list">
             <li class="prices__cart-iterm">
@@ -364,7 +369,9 @@
     </section>
     <section class="footer__corporate-travel">
       <h2 class="footer__corporate-travel-title">Корпоративные путешествия</h2>
-      <p class="footer__corporate-travel-text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+      <p class="footer__corporate-travel-text">Также вы можете заказать индивидуальное путешествие под вашу компанию.
+        Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
+        времяпрепровождением</p>
     </section>
   </footer>
 
