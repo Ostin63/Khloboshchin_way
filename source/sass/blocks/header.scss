@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: var(--basic-white);
 
   @media (min-width: $desktop-width) {
@@ -48,6 +49,7 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    max-width: 813px;
     margin: 0;
     padding-left: 0;
     list-style: none;
