@@ -1,0 +1,184 @@
+.travel-places {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+  grid-template-rows: 79px 24px 36px 20px 942px;
+}
+
+.travel-places__menu {
+  margin: 0;
+  margin-left: 16px;
+  padding: 40px 0 15px 0;
+  display: flex;
+  list-style: none;
+  border-bottom: $border-black-30;
+  grid-column: 2 / -2;
+
+}
+
+.travel-places__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: none;
+  letter-spacing: -0.415px;
+  margin-left: 99px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--greece {
+    display: block;
+  }
+
+  &--albania {
+    display: block;
+  }
+}
+
+.travel-places__link {
+  text-decoration: none;
+  color: var(--black-30);
+
+  &--active {
+    color: var(--basic-pink);
+  }
+}
+
+.travel-places__list-cart {
+  margin: 0;
+  padding: 24px 0;
+  list-style: none;
+  grid-column: 1 / -1;
+}
+
+.travel-places__item-cart {
+  grid-template-columns: 16px 10px 1fr 10px 16px;
+  grid-template-rows: 36px 20px 392px 20px 50px 50px 50px 365px 66px;
+  display: none;
+
+  &--active {
+    display: grid;
+  }
+}
+
+.travel-places__title {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--basic-gray);
+  grid-column: 2 / -2;
+  grid-row: 1 / 2;
+}
+
+.travel-places__text {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+
+  color: var(--black-70);
+  grid-column: 2 / -2;
+  grid-row: 3 / 4;
+}
+
+.travel-places__button {
+  padding: 19px 0;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--basic-pink);
+  color: var(--basic-white);
+  grid-column: 2 / -2;
+  grid-row: 5 / 6;
+}
+
+.travel-places__image-wrapper {
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  grid-column: 1 / -1;
+  grid-row: 7 / 9;
+}
+
+.travel-places__image {
+  width: 100%;
+  height: auto;
+}
+
+.travel-places__reviews {
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  grid-column: 3 / -3;
+  grid-row: 8 / 10;
+}
+
+.travel-places__reviews-item {
+  max-width: 367px;
+  padding: 30px 20px 34px;
+  background: var(--basic-white);
+}
+
+.travel-places__reviews-title {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.691667px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 68px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 68px / 2);
+    background: var(--basic-pink);
+  }
+}
+
+.travel-places__reviews-text {
+  margin: 0;
+  padding: 31px 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+  color: var(--black-70);
+}
+
+.travel-places__reviews-avatar {
+  width: 38px;
+  height: 38px;
+
+}
+
+.travel-places__reviews-name {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.466667px;
+  color: var(--basic-gray);
+}
