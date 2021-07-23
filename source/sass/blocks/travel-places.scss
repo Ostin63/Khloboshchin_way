@@ -1,18 +1,41 @@
 .travel-places {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
-  grid-template-rows: 79px 24px 36px 20px 942px;
+  grid-template-rows: 79px 24px max-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 21px 1fr 21px;
+    grid-template-rows: 134px 30px max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 163px 65px max-content;
+  }
+
+  @media (min-width: $desktop-width-onli-tab) {
+    grid-template-columns: 1fr 1170px 1fr;
+  }
 }
 
 .travel-places__menu {
+  max-width: 902px;
   margin: 0;
   margin-left: 16px;
   padding: 40px 0 15px 0;
   display: flex;
   list-style: none;
   border-bottom: $border-black-30;
-  grid-column: 2 / -2;
+  grid-column: 2 / -1;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 124px;
+  }
 }
 
 .travel-places__item {
@@ -34,6 +57,24 @@
   &--albania {
     display: block;
   }
+
+  &--macedonia {
+    @media (min-width: $mobile-width-onli) {
+      display: block;
+    }
+  }
+
+  &--montenegro {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--croatia {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .travel-places__link {
@@ -47,18 +88,34 @@
 
 .travel-places__list-cart {
   margin: 0;
-  padding: 24px 0;
+  padding: 0;
+  display: block;
   list-style: none;
   grid-column: 1 / -1;
+  grid-row: 3 / -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
 }
 
 .travel-places__item-cart {
-  grid-template-columns: 16px 10px 1fr 10px 16px;
-  grid-template-rows: 36px 20px 392px 20px 50px 50px 50px 365px 66px;
   display: none;
 
   &--active {
+    grid-template-columns: 16px 10px 1fr 10px 16px;
+    grid-template-rows: 36px 20px max-content 20px 50px 50px 50px 365px 66px;
     display: grid;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 16px 10px 1fr 10px 16px;
+      grid-template-rows: 45px 20px max-content 20px 50px 30px 80px 365px 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 370px 100px 403px 1fr;
+      grid-template-rows: 114px 367px 24px 75px 16px;
+    }
   }
 }
 
@@ -72,6 +129,30 @@
   color: var(--basic-gray);
   grid-column: 2 / -2;
   grid-row: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    position: relative;
+    text-align: left;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 55px;
+    line-height: 90px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 175px;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      background: var(--basic-pink);
+    }
+  }
 }
 
 .travel-places__text {
@@ -82,10 +163,16 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.466667px;
-
   color: var(--black-70);
   grid-column: 2 / -2;
   grid-row: 3 / 4;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    text-align: left;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .travel-places__button {
@@ -104,6 +191,17 @@
   color: var(--basic-white);
   grid-column: 2 / -2;
   grid-row: 5 / 6;
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    margin-left: calc(50% - 250px / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
 }
 
 .travel-places__image-wrapper {
@@ -112,6 +210,13 @@
   overflow: hidden;
   grid-column: 1 / -1;
   grid-row: 7 / 9;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    height: 596px;
+    grid-column: -3 / -2;
+    grid-row: 1 / -1;
+  }
 }
 
 .travel-places__image {
@@ -125,12 +230,24 @@
   list-style: none;
   grid-column: 3 / -3;
   grid-row: 8 / 10;
+
+  @media (min-width: $desktop-width) {
+    max-width: 367px;
+    margin-left: auto;
+    grid-column: -3 / -1;
+    grid-row: 2 / 3;
+  }
 }
 
 .travel-places__reviews-item {
   max-width: 367px;
   padding: 30px 20px 34px;
   background: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
 }
 
 .travel-places__reviews-title {
@@ -143,6 +260,12 @@
   line-height: 24px;
   letter-spacing: -0.691667px;
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   &::after {
     position: absolute;
     content: '';
@@ -151,6 +274,10 @@
     bottom: -10px;
     left: calc(50% - 68px / 2);
     background: var(--basic-pink);
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
   }
 }
 
@@ -163,12 +290,28 @@
   line-height: 28px;
   letter-spacing: -0.408333px;
   color: var(--black-70);
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 0 35px;
+    text-align: left;
+  }
+}
+
+.travel-places__wrapper-user {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .travel-places__reviews-avatar {
   width: 38px;
   height: 38px;
+  display: block;
+  margin-left: calc(50% - 38px / 2);
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .travel-places__reviews-name {
@@ -181,4 +324,8 @@
   line-height: 20px;
   letter-spacing: -0.466667px;
   color: var(--basic-gray);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+  }
 }

@@ -19,7 +19,7 @@
       grid-row: 1 / -1;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width-onli) {
       height: 860px;
       background: url('../img/promo-bg-desktop.jpg') 50% 50% no-repeat;
       background-size: cover;
@@ -31,7 +31,7 @@
     grid-template-rows: 60px 45px 15px 76px 15px 50px 83px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     grid-template-columns: 1fr 642px 412px 1fr;
     grid-template-rows: 185px 159px 30px 76px 39px 75px 296px;
   }
@@ -55,7 +55,7 @@
     font-size: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     text-align: left;
     grid-column: 3 / 4;
     font-size: 55px;
@@ -80,7 +80,7 @@
     color: var(--basic-white);
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     grid-column: 3 / 4;
     text-align: left;
   }
@@ -115,7 +115,7 @@
     grid-row: 6 / 7;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     width: 340px;
     margin-left: auto;
     grid-column: 3 / 4;

@@ -1,5 +1,5 @@
 .travels {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 16px 0;
 
@@ -8,7 +8,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 200px 0 0;
+    padding: 80px 15px 0;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    padding: 200px 15px 0;
   }
 }
 
@@ -77,7 +81,7 @@
     flex-direction: row;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width-onli) {
     justify-content: space-between;
   }
 }
@@ -94,7 +98,7 @@
       margin: 40px 20px 0;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width-onli) {
       margin: 55px 0 0;
     }
   }
@@ -103,7 +107,7 @@
     margin: 40px 20px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     width: 350px;
     margin: 55px 0 0;
   }
@@ -115,7 +119,7 @@
   grid-template-rows: 364px 61px;
   text-decoration: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     grid-template-columns: 68px 215px 67px;
     grid-template-rows: 367px 63px;
   }
@@ -147,7 +151,7 @@
   width: 288px;
   height: 425px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     width: 350px;
     height: 430px;
   }

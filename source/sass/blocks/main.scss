@@ -1,0 +1,49 @@
+.main {
+  @media (min-width: $desktop-width-bg) {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+}
+
+.main__promo {
+  grid-column: 1 /-1;
+  grid-row: 1 / 2;
+}
+
+.main__travels {
+  grid-column: 1 /-1;
+  grid-row: 2 / 3;
+}
+
+.main__travel-places {
+  position: relative;
+  grid-column: 1 /-1;
+  grid-row: 3 / 4;
+
+  @media (min-width: $desktop-width-bg) {
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1444px;
+      height: 1208px;
+      top: 0;
+      left: calc(50% - 1444px / 2);
+      background: url('../img/bg-travel-places.png') 50% 50% no-repeat;
+      background-size: 1444px 1208px;
+      grid-column: 1 /-1;
+      grid-row: 3 / 5;
+      z-index: -1;
+    }
+  }
+}
+
+.main__prices {
+  grid-column: 1 /-1;
+  grid-row: 4 / 5;
+}
+
+.main__questions {
+  grid-column: 1 /-1;
+  grid-row: 5 / 6;
+}
