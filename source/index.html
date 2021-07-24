@@ -447,17 +447,23 @@
       </ul>
     </section>
     <section class="main__questions questions">
-      <h2 class="questions__title">У Вас остались вопросы?</h2>
-      <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <form class="questions__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <label for="phone">
-          <input class="questions__form-input questions__form-input--phone" type="text" placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone">
-        </label>
-        <label for="mail">
-          <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail" id="mail" name="mail">
-        </label>
-        <button class="questions__button" type="submit">отправить</button>
-      </form>
+      <div class="questions__wrapper">
+        <h2 class="questions__title">У Вас остались вопросы?</h2>
+        <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <form class="questions__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <div class="questions__container-input">
+            <label for="phone">
+              <input class="questions__form-input questions__form-input--phone" type="text"
+                placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone">
+            </label>
+            <label for="mail">
+              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail" id="mail"
+                name="mail">
+            </label>
+          </div>
+          <button class="questions__button" type="submit">отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 

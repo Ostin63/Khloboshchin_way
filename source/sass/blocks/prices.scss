@@ -1,21 +1,21 @@
 .prices {
-  padding: 45px 16px 0;
+  padding: 45px 16px 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 21px 0;
+    padding: 80px 21px 110px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 234px;
     display: grid;
     grid-template-columns: 606px 1fr 310px;
-    grid-template-rows: 108px 99px 279px 34px 45px;
+    grid-template-rows: 108px 99px 279px 34px 109px;
   }
 
   @media (min-width: $desktop-width-onli-tab) {
     padding-bottom: 100px;
     grid-template-columns: 1fr 770px 90px 310px 1fr;
-    grid-template-rows: 117px 99px 277px 34px 127px;
+    grid-template-rows: 117px 99px 277px 34px 145px;
   }
 }
 
@@ -134,12 +134,12 @@
 }
 
 .prices__list {
-  margin: 0 0 50px;
+  margin: 0;
   padding: 40px 0 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 50px;
+    padding: 40px 50px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -196,6 +196,7 @@
   @media (min-width: $desktop-width-onli-tab) {
     width: 370px;
     height: 672px;
+    padding: 40px 30px 30px;
   }
 }
 
@@ -226,7 +227,6 @@
 
 .prices__vantage-item {
   display: flex;
-  justify-content: space-between;
 }
 
 .prices__wrapper-svg {
@@ -250,12 +250,17 @@
   font-size: 16px;
   line-height: 32px;
   color: var(--basic-gray);
+
+  @media (min-width: $desktop-width-onli-tab) {
+    margin-left: 30px;
+  }
 }
 
 .prices__cart-button {
   margin: auto -20px 0;
   padding: 19px 0;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-weight: 500;
   font-size: 10px;
@@ -265,4 +270,13 @@
   text-decoration: none;
   color: var(--basic-white);
   background: var(--basic-pink);
+
+  @media (min-width: $desktop-width-onli-tab) {
+    height: 75px;
+    margin: auto 0 0;
+    display: flex;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

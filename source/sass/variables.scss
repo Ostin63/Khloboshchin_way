@@ -1,5 +1,6 @@
 $mobile-width-onli: 532px;
 $tablet-width: 768px;
+$tablet-width-form: 861px;
 $desktop-width: 1024px;
 $desktop-width-onli: 1170px;
 $desktop-width-onli-tab: 1210px;
@@ -14,7 +15,9 @@ $desktop-width-bg: 1466px;
   --black-30: rgba(20, 21, 23, 0.3);
   --black-50: rgba(20, 21, 23, 0.5);
   --black-70: rgba(44, 46, 63, 0.7);
+  --gray-10: rgba(41, 54, 66, 0.1);
   --gray-30: rgba(44, 46, 63, 0.3);
+  --pink-bg: #fbf8f8
 }
 
 $border-black-30: 1px solid var(--black-30);
@@ -23,5 +26,6 @@ $border-pink: 3px solid var(--basic-pink);
 $border-pink-1: 1px solid var(--basic-pink);
 
 $shadow-pink: 0px 0px 0px 2px var(--basic-pink) inset;
+$shadow-form: 0px 4px 30px var(--gray-10);
 
 $font-montserrat: "Montserrat", "Arial", sans-serif;
