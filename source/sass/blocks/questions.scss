@@ -7,6 +7,11 @@
     padding: 70px 0 74px;
     background: url('../img/form-bg.jpg') 50% 50% no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-bg@2.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $tablet-width-form) {
@@ -15,6 +20,11 @@
     padding: 70px 0 74px;
     background: url('../img/form-bg-desktop.jpg') 0% 50% no-repeat;
     background-size: 844px 455px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-bg-desktop@2.jpg");
+      background-size: cover;
+    }
   }
 }
 

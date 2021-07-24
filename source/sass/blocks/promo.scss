@@ -12,17 +12,32 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-mobil@2.jpg");
+      background-size: cover;
+    }
+
     @media (min-width: $tablet-width) {
       height: 344px;
       background: url('../img/promo-bg-tablet.jpg') 50% 50% no-repeat;
       background-size: cover;
       grid-row: 1 / -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-bg-tablet@2.jpg");
+        background-size: cover;
+      }
     }
 
     @media (min-width: $desktop-width-onli) {
       height: 860px;
       background: url('../img/promo-bg-desktop.jpg') 50% 50% no-repeat;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-bg-desktop@2.jpg");
+        background-size: cover;
+      }
     }
   }
 
