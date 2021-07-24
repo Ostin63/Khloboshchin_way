@@ -12,8 +12,9 @@
 }
 
 .header__logo {
+  height: 54px;
   display: block;
-  padding: 15px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
 
@@ -146,4 +147,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+header__button-menu {
+  width: 30px;
+  height: 30px;
+  display: block;
 }

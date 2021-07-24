@@ -36,8 +36,8 @@
         </span>
         <a class="header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
       </div>
-      <div class="header__wrapper-menu">
-        <a href="header__button-menu">
+      <div class="header__wrapper-menu d-none">
+        <a class="header__button-menu" href="#">
           <svg class="header__svg-menu" role="img" width="30" height="30">
             <use xlink:href="img/stack.svg#menu"></use>
           </svg>
@@ -46,6 +46,20 @@
     </nav>
   </header>
 
+  <div class="popap-menu">
+    <div class="popap-menu__close">
+      <span class="visually-hidden">Закрыть</span>
+    </div>
+    <ul class="popap-menu__list">
+      <li class="popap-menu__item">
+        <a class="popap-menu__link" href="#6">О путешествии</a>
+      </li>
+      <li class="popap-menu__item">
+        <a class="popap-menu__link" href="#7">Цены</a>
+      </li>
+    </ul>
+  </div>
+
   <main class="main">
     <section class="main__promo promo">
       <h1 class="promo__title">Путешествие по Европе</h1>
@@ -53,7 +67,7 @@
         потрясающая красота природы.</p>
       <a class="promo__button" href="#">смотреть тур</a>
     </section>
-    <section class="main__travels travels">
+    <section class="main__travels travels" id="6">
       <h2 class="travels__title">Места посещения</h2>
       <p class="travels__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="travels__list">
@@ -366,7 +380,7 @@
         </li>
       </ul>
     </section>
-    <section class="main__prices prices">
+    <section class="main__prices prices" id="7">
       <h2 class="prices__title">Цены</h2>
       <p class="prices__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
         потребностей и возможностей.
@@ -474,14 +488,17 @@
         <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <form class="questions__form" action="https://echo.htmlacademy.ru/" method="POST">
           <div class="questions__container-input">
-            <label for="phone">
+            <div class="questions__wrapper-input">
+              <label for="phone"></label>
               <input class="questions__form-input questions__form-input--phone" type="text"
-                placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone">
-            </label>
-            <label for="mail">
-              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail"
-                id="mail" name="mail">
-            </label>
+                placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone" required>
+              <label class="questions__error" for="phone">Данные не верны</label>
+            </div>
+            <div class="questions__wrapper-input">
+              <label for="mail"></label>
+              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail" id="mail" name="mail">
+              <label class="questions__error" for="mail">Данные не верны</label>
+            </div>
           </div>
           <button class="questions__button" type="submit">отправить</button>
         </form>
@@ -574,11 +591,34 @@
         времяпрепровождением</p>
     </section>
   </footer>
-  <div class="popap-menu">
-    <div class="popap-menu__close">
+
+  <div class="popap-form d-none">
+    <div class="popap-form__close">
       <span class="visually-hidden">Закрыть</span>
     </div>
+    <p class="popap-form__text">Купить тур</p>
+    <form class="popap-form__form" action="https://echo.htmlacademy.ru/" method="POST">
+      <label for="popap-form-phone">
+        <input class="popap-form__form-input popap-form__form-input--phone" type="text"
+          placeholder="* +7 Введите 10 цифр номера" id="popap-form-phone" name="phone">
+      </label>
+      <label for="popap-form-mail">
+        <input class="popap-form__form-input popap-form__form-input--mail" type="text" placeholder="E-mail"
+          id="popap-form-mail" name="mail">
+      </label>
+      <button class="popap-form__button" type="submit">отправить</button>
+    </form>
   </div>
+
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Форма успешно отправлена,<br>спасибо! :)</p>
+    </div>
+  </template>
+
+  <div class="overlay d-none"></div>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

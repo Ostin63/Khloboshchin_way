@@ -20,7 +20,9 @@ $desktop-width-bg: 1466px;
   --gray-30: rgba(44, 46, 63, 0.3);
   --white-70: rgba(255, 255, 255, 0.7);
   --pink-bg: #fbf8f8;
+  --special-black: #48494d;
   --special-gray: #d7d9df;
+  --special-pink: #FBF8F8;
 }
 
 $border-black-30: 1px solid var(--black-30);
@@ -29,10 +31,9 @@ $border-pink: 3px solid var(--basic-pink);
 $border-pink-1: 1px solid var(--basic-pink);
 $border-special-gray: 1px solid var(--special-gray);
 $border-07: 1px solid var(--white-70);
+$border-error: 1px solid var(--basic-pink);
 
 $shadow-pink: 0px 0px 0px 2px var(--basic-pink) inset;
 $shadow-form: 0px 4px 30px var(--gray-10);
 
-$font-montserrat: "Montserrat",
-"Arial",
-sans-serif;
+$font-montserrat: "Montserrat", "Arial", sans-serif;
