@@ -103,6 +103,11 @@
   text-transform: uppercase;
   color: var(--basic-white);
 
+  &:hover,
+  &:focus {
+    background: var(--basic-pink-hover);
+  }
+
   &::after {
     content: '';
     width: 14px;

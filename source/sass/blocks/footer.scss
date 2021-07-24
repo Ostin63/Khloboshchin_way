@@ -1,0 +1,195 @@
+.footer {
+  max-width: 1159px;
+  margin: 0 auto;
+  padding: 0 16px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 21px 54px;
+    display: grid;
+    grid-template-columns: 1fr 331px;
+    grid-template-rows: 207px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
+    grid-template-columns: 387px 1fr 320px;
+    grid-template-rows: max-content;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    grid-template-columns: 387px 1fr 375px;
+  }
+
+  @media (min-width: $desktop-width-onli-tab) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__travel {
+  padding-bottom: 20px;
+  border-bottom: $border-special-gray;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}
+
+.footer__wrapper-travel {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-right: 50px;
+    justify-content: space-between;
+    border-right: $border-special-gray;
+  }
+}
+
+.footer__travel-title {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--basic-black);
+}
+
+.footer__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.footer__item {
+  width: 134px;
+  margin: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 95px;
+  }
+}
+
+.footer__item-link {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: var(--black-50);
+}
+
+.footer__contacts {
+  padding: 30px 0 29px;
+  border-bottom: $border-special-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    border-right: $border-special-gray;
+  }
+}
+
+.footer__contacts-title {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--basic-black);
+}
+
+.footer__contacts-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.footer__contacts-link {
+  display: block;
+  margin: 25px 0 23px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--basic-pink);
+
+  &--phone {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.footer__svg-wrapper {
+  &--mail {
+    margin: 23px 15px 25px 0;
+  }
+
+  &--phone {
+    margin: -2px 11px 0 0;
+  }
+}
+
+.footer__svg-icon {
+  text-decoration: none;
+  fill: var(--special-gray);
+}
+
+.footer__corporate-travel {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 50px;
+    grid-column: 3 / -1;
+  }
+}
+
+.footer__corporate-travel-title {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--basic-black);
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.footer__corporate-travel-text {
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: var(--black-50);
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}

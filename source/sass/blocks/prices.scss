@@ -170,7 +170,9 @@
     margin-bottom: 0;
   }
 
-  &--active {
+  &:hover,
+  &:focus {
+    cursor: pointer;
     border: $border-pink-1;
     box-shadow: $shadow-pink;
 
@@ -270,6 +272,11 @@
   text-decoration: none;
   color: var(--basic-white);
   background: var(--basic-pink);
+
+  &:hover,
+  &:focus {
+    background: var(--basic-pink-hover);
+  }
 
   @media (min-width: $desktop-width-onli-tab) {
     height: 75px;

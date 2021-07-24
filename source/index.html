@@ -28,7 +28,14 @@
           <a class="header__item-link" href="#">Цены</a>
         </li>
       </ul>
-      <a class="header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <div class="header__phone-wrapper">
+        <span class="header__wrapper-svg-photo">
+          <svg class="header__svg-icon" role="img" width="30" height="30">
+            <use xlink:href="img/stack.svg#phone"></use>
+          </svg>
+        </span>
+        <a class="header__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
       <div class="header__wrapper-menu">
         <a href="header__button-menu">
           <svg class="header__svg-menu" role="img" width="30" height="30">
@@ -51,7 +58,7 @@
       <p class="travels__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="travels__list">
         <li class="travels__item">
-          <a class="travels__link" href="#">
+          <a class="travels__link" href="#1">
             <h3 class="travels__item-title">Греция</h3>
             <div class="travels__image-wrapper">
               <picture>
@@ -65,9 +72,12 @@
               </picture>
             </div>
           </a>
+          <div class="travels__overlay">
+            <a class="travels__overlay-button" href="#1">смотреть подробнее</a>
+          </div>
         </li>
         <li class="travels__item">
-          <a class="travels__link" href="#">
+          <a class="travels__link" href="#2">
             <h3 class="travels__item-title">Албания</h3>
             <div class="travels__image-wrapper">
               <picture>
@@ -81,9 +91,12 @@
               </picture>
             </div>
           </a>
+          <div class="travels__overlay">
+            <a class="travels__overlay-button" href="#2">смотреть подробнее</a>
+          </div>
         </li>
         <li class="travels__item">
-          <a class="travels__link" href="#">
+          <a class="travels__link" href="#3">
             <h3 class="travels__item-title">Македония</h3>
             <div class="travels__image-wrapper">
               <picture>
@@ -97,9 +110,12 @@
               </picture>
             </div>
           </a>
+          <div class="travels__overlay">
+            <a class="travels__overlay-button" href="#3">смотреть подробнее</a>
+          </div>
         </li>
         <li class="travels__item">
-          <a class="travels__link" href="#">
+          <a class="travels__link" href="#4">
             <h3 class="travels__item-title">Черногория</h3>
             <div class="travels__image-wrapper">
               <picture>
@@ -114,9 +130,12 @@
               </picture>
             </div>
           </a>
+          <div class="travels__overlay">
+            <a class="travels__overlay-button" href="#4">смотреть подробнее</a>
+          </div>
         </li>
         <li class="travels__item">
-          <a class="travels__link" href="#">
+          <a class="travels__link" href="#5">
             <h3 class="travels__item-title">Хорватия</h3>
             <div class="travels__image-wrapper">
               <picture>
@@ -130,6 +149,9 @@
               </picture>
             </div>
           </a>
+          <div class="travels__overlay">
+            <a class="travels__overlay-button" href="#5">смотреть подробнее</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -153,7 +175,7 @@
         </li>
       </ul>
       <ul class="travel-places__list-cart">
-        <li class="travel-places__item-cart travel-places__item-cart--active">
+        <li class="travel-places__item-cart travel-places__item-cart--active" id="1">
           <h4 class="travel-places__title">Греция</h4>
           <p class="travel-places__text">На севере Греции находится один из крупнейших комплексов монастырей,
             расположенных на вершинах скал. Название его
@@ -193,7 +215,7 @@
             </li>
           </ul>
         </li>
-        <li class="travel-places__item-cart">
+        <li class="travel-places__item-cart" id="2">
           <h4 class="travel-places__title">Албания</h4>
           <p class="travel-places__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
             удивительным пляжем. Вначале кажется, что
@@ -230,7 +252,7 @@
             </li>
           </ul>
         </li>
-        <li class="travel-places__item-cart">
+        <li class="travel-places__item-cart" id="3">
           <h4 class="travel-places__title">Македония</h4>
           <p class="travel-places__text">В Македонии нашей целью будет посетить Палаошник, который расположился в
             удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся
@@ -268,7 +290,7 @@
             </li>
           </ul>
         </li>
-        <li class="travel-places__item-cart">
+        <li class="travel-places__item-cart" id="4">
           <h4 class="travel-places__title">Черногория</h4>
           <p class="travel-places__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
             некоторых местах высотой берегов доходит до
@@ -304,7 +326,7 @@
             </li>
           </ul>
         </li>
-        <li class="travel-places__item-cart">
+        <li class="travel-places__item-cart" id="5">
           <h4 class="travel-places__title">Хорватия</h4>
           <p class="travel-places__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
             увлечет вас на 80-ти метровую глубину
@@ -358,13 +380,13 @@
         </span>
         +7 (499) -784-684-46</a>
       <ul class="prices__list">
-        <li class="prices__cart prices__cart--active">
+        <li class="prices__cart prices__cart">
           <h2 class="prices__cart-title">Комплексный<br><span>$1999</span></h2>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__vantage">
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -372,7 +394,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -380,7 +402,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -388,7 +410,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -403,7 +425,7 @@
           <ul class="prices__vantage">
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -411,7 +433,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -419,7 +441,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -427,7 +449,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -435,7 +457,7 @@
             </li>
             <li class="prices__vantage-item">
               <div class="prices__wrapper-svg">
-                <svg class="prices__svg-icon" role="img" width="14" height="12">
+                <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
                 </svg>
               </div>
@@ -457,8 +479,8 @@
                 placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone">
             </label>
             <label for="mail">
-              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail" id="mail"
-                name="mail">
+              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail"
+                id="mail" name="mail">
             </label>
           </div>
           <button class="questions__button" type="submit">отправить</button>
@@ -467,65 +489,83 @@
     </section>
   </main>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <section class="footer__travel">
       <h2 class="footer__travel-title">Следующие путешествия</h2>
-      <ul class="footer__list footer__list--one">
-        <li class="footer__item">
-          <a href="#">Марсель</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Ним</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Монпелье</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Барселона</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Пальма</a>
-        </li>
-      </ul>
-      <ul class="footer__list footer__list--two">
-        <li class="footer__item">
-          <a href="#">Сардиния</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Палермо</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Катания</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Неаполь</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Рим</a>
-        </li>
-      </ul>
-      <ul class="footer__list footer__list--three">
-        <li class="footer__item">
-          <a href="#">Корс</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Ницца</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Монако</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Динь-ле-Бен</a>
-        </li>
-        <li class="footer__item">
-          <a href="#">Гренобль</a>
-        </li>
-      </ul>
+      <div class="footer__wrapper-travel">
+        <ul class="footer__list footer__list--one">
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Марсель</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Ним</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Монпелье</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Барселона</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Пальма</a>
+          </li>
+        </ul>
+        <ul class="footer__list footer__list--two">
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Сардиния</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Палермо</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Катания</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Неаполь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Рим</a>
+          </li>
+        </ul>
+        <ul class="footer__list footer__list--three">
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Корс</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Ницца</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Монако</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Динь-ле-Бен</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Гренобль</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="footer__contacts">
       <h2 class="footer__contacts-title">Наши контакты</h2>
-      <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a class="footer__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <div class="footer__contacts-wrapper">
+        <span class="footer__svg-wrapper footer__svg-wrapper--mail">
+          <svg class="footer__svg-icon" role="img" width="26" height="20">
+            <use xlink:href="img/stack.svg#mail"></use>
+          </svg>
+        </span>
+        <a class="footer__contacts-link footer__contacts-link--mail"
+          href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="footer__contacts-wrapper">
+        <span class="footer__svg-wrapper footer__svg-wrapper--phone">
+          <svg class="footer__svg-icon" role="img" width="30" height="30">
+            <use xlink:href="img/stack.svg#phone"></use>
+          </svg>
+        </span>
+        <a class="footer__contacts-link footer__contacts-link--phone" href="tel:+749978468446">+7
+          (499) -784-684-46</a>
+      </div>
     </section>
     <section class="footer__corporate-travel">
       <h2 class="footer__corporate-travel-title">Корпоративные путешествия</h2>
@@ -533,8 +573,12 @@
         Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
         времяпрепровождением</p>
     </section>
-  </footer> -->
-
+  </footer>
+  <div class="popap-menu">
+    <div class="popap-menu__close">
+      <span class="visually-hidden">Закрыть</span>
+    </div>
+  </div>
 </body>
 
 </html>

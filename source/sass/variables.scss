@@ -9,23 +9,30 @@ $desktop-width-bg: 1466px;
 :root {
   --basic-white: #ffffff;
   --basic-pink: #fe7865;
-  --basic-pink-light: #f17d4B;
+  --basic-pink-hover: #f17d4b;
   --basic-black: #141517;
   --basic-gray: #2c2e3f;
   --black-30: rgba(20, 21, 23, 0.3);
   --black-50: rgba(20, 21, 23, 0.5);
+  --black-60: rgba(20, 21, 23, 0.6);
   --black-70: rgba(44, 46, 63, 0.7);
   --gray-10: rgba(41, 54, 66, 0.1);
   --gray-30: rgba(44, 46, 63, 0.3);
-  --pink-bg: #fbf8f8
+  --white-70: rgba(255, 255, 255, 0.7);
+  --pink-bg: #fbf8f8;
+  --special-gray: #d7d9df;
 }
 
 $border-black-30: 1px solid var(--black-30);
 $border-gray: 1px solid var(--gray-30);
 $border-pink: 3px solid var(--basic-pink);
 $border-pink-1: 1px solid var(--basic-pink);
+$border-special-gray: 1px solid var(--special-gray);
+$border-07: 1px solid var(--white-70);
 
 $shadow-pink: 0px 0px 0px 2px var(--basic-pink) inset;
 $shadow-form: 0px 4px 30px var(--gray-10);
 
-$font-montserrat: "Montserrat", "Arial", sans-serif;
+$font-montserrat: "Montserrat",
+"Arial",
+sans-serif;

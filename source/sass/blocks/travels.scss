@@ -82,11 +82,12 @@
   }
 
   @media (min-width: $desktop-width-onli) {
-    justify-content: space-between;
+    column-gap: 60px;
   }
 }
 
 .travels__item {
+  position: relative;
   width: 288px;
   margin: 0 auto;
   margin-top: 35px;
@@ -155,4 +156,37 @@
     width: 350px;
     height: 430px;
   }
+}
+
+.travels__overlay {
+  position: absolute;
+  width: 288px;
+  height: 425px;
+  top: 0;
+  left: 0;
+  background: var(--black-60);
+  opacity: 0;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.travels__overlay-button {
+  width: 266px;
+  height: 77px;
+  margin: 177px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: $border-07;
+  color: var(--basic-white);
 }
