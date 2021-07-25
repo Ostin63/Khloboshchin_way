@@ -394,8 +394,9 @@
         </span>
         +7 (499) -784-684-46</a>
       <ul class="prices__list">
-        <li class="prices__cart prices__cart">
-          <h2 class="prices__cart-title">Комплексный<br><span>$1999</span></h2>
+        <li class="prices__cart">
+          <h2 class="prices__cart-title">Комплексный</h2>
+          <p class="prices__cart-top-text">$1999</p>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__vantage">
             <li class="prices__vantage-item">
@@ -434,7 +435,8 @@
           <a class="prices__cart-button" href="#">купить тур сейчас</a>
         </li>
         <li class="prices__cart">
-          <h2 class="prices__cart-title">Экономный<br><span>$1399</span></h2>
+          <h2 class="prices__cart-title">Экономный</h2>
+          <p class="prices__cart-top-text">$1399</p>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__vantage">
             <li class="prices__vantage-item">
@@ -489,14 +491,15 @@
         <form class="questions__form" action="https://echo.htmlacademy.ru/" method="POST">
           <div class="questions__container-input">
             <div class="questions__wrapper-input">
-              <label for="phone"></label>
-              <input class="questions__form-input questions__form-input--phone" type="text"
-                placeholder="* +7 Введите 10 цифр номера" id="phone" name="phone" required>
+              <label class="questions__label-phone" for="phone"><sup>*</sup></label>
+              <input class="questions__form-input questions__form-input--phone" type="tel"
+                placeholder="+7 Введите 10 цифр номера" id="phone" name="phone" pattern="\+7\s?[0-9]{10}" required>
               <label class="questions__error" for="phone">Данные не верны</label>
             </div>
             <div class="questions__wrapper-input">
               <label for="mail"></label>
-              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail" id="mail" name="mail">
+              <input class="questions__form-input questions__form-input--mail" type="text" placeholder="E-mail"
+                id="mail" name="mail">
               <label class="questions__error" for="mail">Данные не верны</label>
             </div>
           </div>
@@ -593,21 +596,28 @@
   </footer>
 
   <div class="popap-form d-none">
-    <div class="popap-form__close">
-      <span class="visually-hidden">Закрыть</span>
+    <div class="popap-form__wrapper">
+      <div class="popap-form__close">
+        <span class="visually-hidden">Закрыть</span>
+      </div>
+      <p class="popap-form__text">Купить тур</p>
+      <img class="popap-form__image" src="img/img-popap.jpg" width="338" height="444" alt="Картинка побережья">
+      <form class="popap-form__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="popap-form__wrapper-input">
+          <label class="popap-form__label-phone" for="popap-form-phone"><sup>*</sup></label>
+          <input class="popap-form__form-input popap-form__form-input--phone" type="tel"
+            placeholder="+7 Введите 10 цифр номера" id="popap-form-phone" name="phone" pattern="\+7\s?[0-9]{10}" required>
+          <label class="popap-form__error" for="phone">Данные не верны</label>
+        </div>
+        <div class="popap-form__wrapper-input">
+          <label for="popap-form-mail"></label>
+          <input class="popap-form__form-input popap-form__form-input--mail" type="text" placeholder="E-mail"
+            id="popap-form-mail" name="mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+          <label class="popap-form__error" for="phone">Данные не верны</label>
+        </div>
+        <button class="popap-form__button" type="submit">отправить</button>
+      </form>
     </div>
-    <p class="popap-form__text">Купить тур</p>
-    <form class="popap-form__form" action="https://echo.htmlacademy.ru/" method="POST">
-      <label for="popap-form-phone">
-        <input class="popap-form__form-input popap-form__form-input--phone" type="text"
-          placeholder="* +7 Введите 10 цифр номера" id="popap-form-phone" name="phone">
-      </label>
-      <label for="popap-form-mail">
-        <input class="popap-form__form-input popap-form__form-input--mail" type="text" placeholder="E-mail"
-          id="popap-form-mail" name="mail">
-      </label>
-      <button class="popap-form__button" type="submit">отправить</button>
-    </form>
   </div>
 
   <template id="success">

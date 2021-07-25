@@ -1,22 +1,44 @@
 .popap-form {
   position: fixed;
   width: 100%;
-  margin: 0;
-  padding: 0 16px 185px;
+  max-width: 728px;
+  margin: 0 auto;
+  padding: 0 0 185px;
   top: 0;
   left: 0;
   background: var(--basic-white);
   z-index: 15;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    top: 50px;
+    left: calc(50% - 728px / 2);
+  }
+}
+
+.popap-form__wrapper {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 338px 390px;
+    grid-template-rows: 60px 53px max-content;
+    background: var(--special-pink);
+  }
 }
 
 .popap-form__close {
   content: '';
+  width: 60px;
+  height: 62px;
   margin-left: auto;
-  width: 50px;
-  height: 52px;
-  text-align: right;
   background: url('../img/stack.svg#close') 50% 50% no-repeat;
+  background-size: 22px 23px;
   cursor: pointer;
+  grid-column: 2 / -1;
+  @media (min-width: $tablet-width){
+    grid-row: 1 / 2;
+  }
 }
 
 .popap-form__text {
@@ -26,6 +48,60 @@
   font-size: 25px;
   line-height: 170%;
   color: var(--special-black);
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+}
+
+.popap-form__image {
+  width: 338px;
+  height: 444px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-column: 1 / -2;
+    grid-row: 1 / -1;
+  }
+}
+
+.popap-form__form {
+  width: 100%;
+  margin-left: auto;
+  padding: 0 16px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 61px 89px 59px;
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+  }
+}
+
+.popap-form__wrapper-input {
+  position: relative;
+}
+
+.popap-form__label-phone {
+  position: absolute;
+  width: 6px;
+  height: 26px;
+  top: 6px;
+  left: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  color: var(--basic-pink);
+  font-family: $font-proxima-nova;
+}
+
+.popap-form__error {
+  display: none;
 }
 
 .popap-form__form-input {
@@ -34,12 +110,29 @@
   margin-bottom: 20px;
   padding: 0 15px;
   border: $border-gray;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 48px;
+  color: var(--basic-black);
 
-  &::placeholder {
+  &--phone {
+    padding-left: 26px;
+  }
+
+  &.error {
+    border: $border-error;
+  }
+
+  &.error+.popap-form__error {
+    position: absolute;
+    display: block;
+    width: 300px;
+    top: -17px;
+    left: 0;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 48px;
-    color: var(--basic-black);
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--basic-pink);
   }
 }
 

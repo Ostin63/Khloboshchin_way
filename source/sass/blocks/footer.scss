@@ -36,6 +36,7 @@
 }
 
 .footer__wrapper-travel {
+  margin-top: 10px;
   display: flex;
   column-gap: 20px;
   flex-wrap: wrap;
@@ -90,7 +91,7 @@
 }
 
 .footer__contacts {
-  padding: 30px 0 29px;
+  padding: 30px 0 23px;
   border-bottom: $border-special-gray;
 
   @media (min-width: $tablet-width) {
@@ -128,7 +129,7 @@
 
 .footer__contacts-link {
   display: block;
-  margin: 25px 0 23px;
+  margin: 25px 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -143,7 +144,7 @@
 
 .footer__svg-wrapper {
   &--mail {
-    margin: 23px 15px 25px 0;
+    margin: 22px 14px 22px 0;
   }
 
   &--phone {
@@ -175,6 +176,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
+  letter-spacing: -0.2px;
   color: var(--basic-black);
 
   @media (min-width: $desktop-width) {
@@ -183,10 +185,11 @@
 }
 
 .footer__corporate-travel-text {
+  margin: 20px 0;
   text-align: center;
   font-weight: normal;
   font-size: 14px;
-  line-height: 170%;
+  line-height: 175%;
   color: var(--black-50);
 
   @media (min-width: $desktop-width) {

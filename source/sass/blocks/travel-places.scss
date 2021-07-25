@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 21px 1fr 21px;
-    grid-template-rows: 134px 30px max-content;
+    grid-template-rows: 136px 30px max-content;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,8 +21,7 @@
 .travel-places__menu {
   max-width: 902px;
   margin: 0;
-  margin-left: 16px;
-  padding: 40px 0 15px 0;
+  padding: 40px 0 18px 0;
   display: flex;
   list-style: none;
   border-bottom: $border-black-30;
@@ -237,7 +236,7 @@
   grid-row: 8 / 10;
 
   @media (min-width: $desktop-width) {
-    max-width: 367px;
+    max-width: 382px;
     margin-left: auto;
     grid-column: -3 / -1;
     grid-row: 2 / 3;
@@ -245,7 +244,7 @@
 }
 
 .travel-places__reviews-item {
-  max-width: 367px;
+  max-width: 382px;
   padding: 30px 20px 34px;
   background: var(--basic-white);
 

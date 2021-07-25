@@ -2,7 +2,7 @@
   padding: 45px 16px 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 21px 110px;
+    padding: 50px 21px 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,7 +176,8 @@
     border: $border-pink-1;
     box-shadow: $shadow-pink;
 
-    .prices__cart-title {
+    .prices__cart-title,
+    .prices__cart-top-text {
       color: var(--basic-pink);
       opacity: 1;
 
@@ -202,18 +203,27 @@
   }
 }
 
-.prices__cart-title {
+.prices__cart-title,
+.prices__cart-top-text {
   margin: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
+  letter-spacing: -1.27273px;
   color: var(--basic-black);
   opacity: 0.7;
 }
 
+.prices__cart-top-text {
+  margin-top: 10px;
+  margin-left: -5px;
+  letter-spacing: 1px;
+}
+
 .prices__cart-text {
-  padding-bottom: 10px;
+  margin: 10px 0 0 0;
+  padding-bottom: 8px;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
@@ -223,18 +233,22 @@
 }
 
 .prices__vantage {
-  padding: 0;
+  padding: 9px 0 0 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .prices__vantage-item {
   display: flex;
+  padding-top: 10px;
 }
 
 .prices__wrapper-svg {
   width: 22px;
   height: 22px;
-  margin-top: 15px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
 }
@@ -247,7 +261,7 @@
 
 .prices__vantage-text {
   width: 218px;
-  margin: 10px 0 0 8px;
+  margin: 0 0 0 8px;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;

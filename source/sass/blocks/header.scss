@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-  height: 54px;
+  height: 50px;
   display: block;
   padding: 0 15px;
   display: flex;
@@ -20,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px;
+    padding-left: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +150,7 @@
   }
 }
 
-header__button-menu {
+.header__button-menu {
   width: 30px;
   height: 30px;
   display: block;
