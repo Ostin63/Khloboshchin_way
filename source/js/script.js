@@ -1,6 +1,6 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-shadow */
 /* eslint-disable id-length */
+/* eslint-disable no-unused-vars */
+
 const body = document.querySelector('body');
 const popapMenu = body.querySelector('.popap-menu');
 const headerMenu = body.querySelector('.header__wrapper-menu');
@@ -27,6 +27,7 @@ const success = body.querySelector('#success')
 
 const cartActive = 'travel-places__item-cart--active';
 const buttonActive = 'travel-places__link--active';
+
 const successElement = success.cloneNode(true);
 
 headerMenu.classList.add('d-block');
@@ -46,13 +47,17 @@ const onClickRemoveMenu = () => {
 };
 
 const onBuyTour = (evt) => {
-  evt.preventDefault();
+  if (evt) {
+    evt.preventDefault();
+  }
   popapForm.classList.remove('d-none');
   overlay.classList.remove('d-none');
 };
 
 const onCloseBuyTour = (evt) => {
-  evt.preventDefault();
+  if (evt) {
+    evt.preventDefault();
+  }
   popapForm.classList.add('d-none');
   overlay.classList.add('d-none');
 };
@@ -105,6 +110,7 @@ const resetForm = () => {
 const alertForm = () => {
   alertSuccess();
   resetForm();
+  onCloseBuyTour();
 };
 
 const sendData = (url, bodyForm, alertSucces, error) => {
@@ -133,9 +139,11 @@ const onFormSend = (evt) => {
 };
 
 const switchSlides = (avatarSwitchers, switchers, slides) => {
+  // eslint-disable-next-line id-length
   for (let i = 0; i < avatarSwitchers.length; i++) {
     avatarSwitchers[i].addEventListener('click', () => {
 
+      // eslint-disable-next-line no-shadow
       for (let i = 0; i < avatarSwitchers.length; i++) {
         slides[i].classList.remove(cartActive);
         switchers[i].classList.remove(buttonActive);
