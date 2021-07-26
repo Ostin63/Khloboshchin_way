@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 70px 0 74px;
-    background: url('../img/form-bg.jpg') 50% 50% no-repeat;
+    background: url("../img/form-bg.jpg") 50% 50% no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
@@ -18,13 +18,17 @@
     width: 100%;
     margin: 0 auto;
     padding: 70px 0 74px;
-    background: url('../img/form-bg-desktop.jpg') 0% 50% no-repeat;
+    background: url("../img/form-bg-desktop.jpg") 0% 50% no-repeat;
     background-size: 844px 455px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/form-bg-desktop@2.jpg");
       background-size: cover;
     }
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    padding: 74px 0 72px;
   }
 }
 
@@ -40,6 +44,10 @@
 
   @media (min-width: $tablet-width-form) {
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    padding-bottom: 48px;
   }
 }
 
@@ -59,6 +67,10 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--basic-black);
+
+  @media (min-width: $tablet-width) {
+    margin: 12px 0 23px;
+  }
 }
 
 .questions__container-input {
@@ -119,7 +131,7 @@
     border: $border-error;
   }
 
-  &.error+.questions__error {
+  &.error + .questions__error {
     position: absolute;
     display: block;
     width: 300px;
@@ -130,9 +142,11 @@
     line-height: 15px;
     color: var(--basic-pink);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
-
-
 
 .questions__button {
   width: 100%;
@@ -154,5 +168,14 @@
   @media (min-width: $tablet-width) {
     width: 250px;
     margin-left: calc(50% - 250px / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 176px;
+    margin-left: calc(50% - 176px / 2);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2.5px;
   }
 }

@@ -8,13 +8,14 @@
     grid-template-rows: 136px 30px max-content;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width-onli) {
     grid-template-columns: 1fr 1000px 1fr;
     grid-template-rows: 163px 65px max-content;
   }
 
   @media (min-width: $desktop-width-onli-tab) {
     grid-template-columns: 1fr 1170px 1fr;
+    grid-template-rows: 65px 60px max-content;
   }
 }
 
@@ -32,8 +33,8 @@
     padding-top: 95px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 124px;
+  @media (min-width: $desktop-width-onli-tab) {
+    padding-top: 26px;
   }
 }
 
@@ -113,7 +114,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 370px 100px 403px 1fr;
-      grid-template-rows: 114px 367px 24px 75px 16px;
+      grid-template-rows: 121px 367px 21px 75px 16px;
     }
   }
 }
@@ -141,10 +142,11 @@
     grid-row: 1 / 2;
     font-size: 55px;
     line-height: 90px;
+    letter-spacing: -1.745px;
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 175px;
       height: 3px;
       left: 0;
@@ -205,6 +207,9 @@
     margin-left: 0;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -218,6 +223,7 @@
   @media (min-width: $desktop-width) {
     width: 430px;
     height: 596px;
+    margin-top: 4px;
     grid-column: -3 / -2;
     grid-row: 1 / -1;
   }
@@ -252,6 +258,11 @@
     padding: 30px;
   }
 
+  @media (min-width: $desktop-width-bg) {
+    margin-top: -6px;
+    margin-left: -58px;
+    padding-top: 33px;
+  }
 }
 
 .travel-places__reviews-title {
@@ -272,7 +283,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 68px;
     height: 1px;
     bottom: -10px;
@@ -296,7 +307,7 @@
   color: var(--black-70);
 
   @media (min-width: $tablet-width) {
-    padding: 32px 0 35px;
+    padding: 32px 0 32px;
     text-align: left;
   }
 }

@@ -35,13 +35,14 @@
     text-align: left;
     font-size: 55px;
     line-height: 80px;
+    letter-spacing: -1.245px;
 
     &::after {
       position: absolute;
       content: "";
       width: 228px;
       height: 4px;
-      bottom: -30px;
+      bottom: -33px;
       left: 0;
       background: var(--basic-pink);
     }
@@ -82,8 +83,11 @@
   }
 
   @media (min-width: $desktop-width-onli) {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin: 54px 0 0;
+  }
+
+  @media (min-width: $desktop-width-bg) {
+    margin: 54px -30px 0;
   }
 }
 
@@ -99,9 +103,9 @@
       margin: 40px auto 0;
     }
 
-    // @media (min-width: $desktop-width-onli) {
-    //   margin: 55px 0 0;
-    // }
+    @media (min-width: $desktop-width-onli) {
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -110,7 +114,7 @@
 
   @media (min-width: $desktop-width-onli) {
     width: 350px;
-    margin: 55px auto 0;
+    margin: 0 auto 100px;
   }
 }
 

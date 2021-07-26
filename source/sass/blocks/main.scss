@@ -3,7 +3,6 @@
     display: grid;
     grid-template-rows: auto;
   }
-
 }
 
 .main__promo {
@@ -24,13 +23,13 @@
   @media (min-width: $desktop-width-bg) {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 1444px;
       height: 1208px;
-      top: 0;
+      top: -40px;
       left: calc(50% - 1444px / 2);
-      background: url('../img/bg-travel-places.png') 50% 50% no-repeat;
-      background-size: 1444px 1208px;
+      background: url("../img/bg-travel-places.png") 50% 50% no-repeat;
+      background-size: cover;
       grid-column: 1 /-1;
       grid-row: 3 / 5;
       z-index: -1;

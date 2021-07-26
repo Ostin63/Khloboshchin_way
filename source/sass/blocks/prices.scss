@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-width-onli-tab) {
-    padding-bottom: 100px;
-    grid-template-columns: 1fr 770px 90px 310px 1fr;
+    padding-bottom: 137px;
+    grid-template-columns: 1fr 770px 100px 300px 1fr;
     grid-template-rows: 117px 99px 277px 34px 145px;
   }
 }
@@ -34,6 +34,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin-top: -5px;
+    margin-left: -5px;
     text-align: left;
     grid-column: 3 / -1;
     grid-row: 2 / 3;
@@ -42,11 +44,11 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 175px;
       height: 3px;
       left: 0;
-      bottom: 0px;
+      bottom: -3px;
       background: var(--basic-pink);
     }
   }
@@ -70,6 +72,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: -5px;
+    padding-top: 33px;
     text-align: left;
     grid-column: 3 / -1;
     grid-row: 3 / 4;
@@ -97,6 +101,11 @@
   }
 
   @media (min-width: $desktop-width-onli-tab) {
+    margin: 6px 0 0 40px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.4px;
     grid-column: 4 / -2;
   }
 }
@@ -113,10 +122,13 @@
 
   @media (min-width: $desktop-width) {
     width: 262px;
-    margin: 0;
+    margin: 18px 15px 0 -5px;
     grid-column: 3 / -1;
     grid-row: -2 / -1;
     display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black);
   }
 
   @media (min-width: $desktop-width-onli-tab) {
@@ -128,9 +140,17 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    margin: 5px 20px 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 -5px;
     display: block;
   }
+}
+
+.prices__svg-icon-phone {
+  width: 30px;
+  height: 30px;
+  fill: var(--basic-pink);
 }
 
 .prices__list {
@@ -139,7 +159,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 50px 0;
+    padding: 42px 50px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -180,7 +200,6 @@
     .prices__cart-top-text {
       color: var(--basic-pink);
       opacity: 1;
-
     }
 
     .prices__cart-text {
@@ -203,6 +222,14 @@
   }
 }
 
+.prices__top-wrapper {
+  @media (min-width: $desktop-width-onli-tab) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .prices__cart-title,
 .prices__cart-top-text {
   margin: 0;
@@ -213,12 +240,28 @@
   letter-spacing: -1.27273px;
   color: var(--basic-black);
   opacity: 0.7;
+
+  @media (min-width: $desktop-width-onli-tab) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -1.27273px;
+    opacity: 0.7;
+  }
 }
 
 .prices__cart-top-text {
   margin-top: 10px;
   margin-left: -5px;
   letter-spacing: 1px;
+
+  @media (min-width: $desktop-width-onli-tab) {
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+  }
 }
 
 .prices__cart-text {
@@ -230,6 +273,13 @@
   line-height: 24px;
   color: var(--basic-gray);
   border-bottom: $border-gray;
+
+  @media (min-width: $desktop-width-onli-tab) {
+    padding-right: 30px;
+    padding-bottom: 26px;
+    margin-top: 37px;
+    text-align: left;
+  }
 }
 
 .prices__vantage {
@@ -238,11 +288,32 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width-onli-tab) {
+    padding-top: 20px;
+  }
 }
 
 .prices__vantage-item {
   display: flex;
-  padding-top: 10px;
+  margin-top: 10px;
+
+  @media (min-width: $desktop-width-onli-tab) {
+    &--four {
+      margin-top: 15px;
+    }
+
+    &--rigth-two,
+    &--rigth-three,
+    &--rigth-four,
+    &--rigth-five {
+      margin-top: 15px;
+    }
+  }
 }
 
 .prices__wrapper-svg {
@@ -260,7 +331,6 @@
 }
 
 .prices__vantage-text {
-  width: 218px;
   margin: 0 0 0 8px;
   font-weight: normal;
   font-size: 16px;
@@ -268,7 +338,7 @@
   color: var(--basic-gray);
 
   @media (min-width: $desktop-width-onli-tab) {
-    margin-left: 30px;
+    margin-left: 10px;
   }
 }
 

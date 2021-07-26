@@ -17,12 +17,12 @@
 }
 
 .popap-menu__close {
-  content: '';
+  content: "";
   margin-left: auto;
   width: 50px;
   height: 52px;
   text-align: right;
-  background: url('../img/stack.svg#close') 50% 50% no-repeat;
+  background: url("../img/stack.svg#close") 50% 50% no-repeat;
   background-size: 22px 23px;
   cursor: pointer;
 }
@@ -53,10 +53,10 @@
   color: var(--special-black);
 
   &::after {
-    content: '';
+    content: "";
     width: 26px;
     height: 26px;
     margin-left: auto;
-    background: url('../img/stack.svg#arrow-down') 50% 50% no-repeat;
+    background: url("../img/stack.svg#arrow-down") 50% 50% no-repeat;
   }
 }

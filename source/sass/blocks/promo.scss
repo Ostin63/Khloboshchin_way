@@ -4,10 +4,10 @@
   grid-template-rows: 235px 20px 108px 20px 50px;
 
   &::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 235px;
-    background: url('../img/promo-bg-mobil.jpg') 50% 50% no-repeat;
+    background: url("../img/promo-bg-mobil.jpg") 50% 50% no-repeat;
     background-size: cover;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
@@ -19,7 +19,7 @@
 
     @media (min-width: $tablet-width) {
       height: 344px;
-      background: url('../img/promo-bg-tablet.jpg') 50% 50% no-repeat;
+      background: url("../img/promo-bg-tablet.jpg") 50% 50% no-repeat;
       background-size: cover;
       grid-row: 1 / -1;
 
@@ -31,7 +31,7 @@
 
     @media (min-width: $desktop-width-onli) {
       height: 860px;
-      background: url('../img/promo-bg-desktop.jpg') 50% 50% no-repeat;
+      background: url("../img/promo-bg-desktop.jpg") 50% 50% no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
@@ -75,7 +75,7 @@
     grid-column: 3 / 4;
     font-size: 55px;
     line-height: 80px;
-    letter-spacing: -1.10667px;
+    letter-spacing: -1.40667px;
   }
 }
 
@@ -96,6 +96,7 @@
   }
 
   @media (min-width: $desktop-width-onli) {
+    width: 376px;
     grid-column: 3 / 4;
     text-align: left;
   }
@@ -124,10 +125,10 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
-    background: url('../img/stack.svg#arrow') 50% 50% no-repeat;
+    background: url("../img/stack.svg#arrow") 50% 50% no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -138,6 +139,8 @@
   @media (min-width: $desktop-width-onli) {
     width: 340px;
     margin-left: auto;
+    font-size: 12px;
+    line-height: 15px;
     grid-column: 3 / 4;
   }
 }

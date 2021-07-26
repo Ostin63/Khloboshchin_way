@@ -388,18 +388,20 @@
       <p class="prices__phrase"><b>Свяжитесь с нами</b></p>
       <a class="prices__phone-link" href="tel:+749978468446">
         <span class="prices__wrapper-svg-photo">
-          <svg class="prices__svg-icon" role="img" width="30" height="30">
+          <svg class="prices__svg-icon-phone" role="img" width="30" height="30">
             <use xlink:href="img/stack.svg#phone"></use>
           </svg>
         </span>
         +7 (499) -784-684-46</a>
       <ul class="prices__list">
         <li class="prices__cart">
-          <h2 class="prices__cart-title">Комплексный</h2>
-          <p class="prices__cart-top-text">$1999</p>
+          <div class="prices__top-wrapper">
+            <h2 class="prices__cart-title">Комплексный</h2>
+            <p class="prices__cart-top-text">$1999</p>
+          </div>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__vantage">
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--one">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -407,7 +409,7 @@
               </div>
               <p class="prices__vantage-text">Разработанный маршрут с гидом группы</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--two">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -415,7 +417,7 @@
               </div>
               <p class="prices__vantage-text">Перелет, трансфер и проживание в отелях</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--three">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -423,7 +425,7 @@
               </div>
               <p class="prices__vantage-text">Завтраки, ужины в отелях и ланчи на природе</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--four">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -435,11 +437,13 @@
           <a class="prices__cart-button" href="#">купить тур сейчас</a>
         </li>
         <li class="prices__cart">
-          <h2 class="prices__cart-title">Экономный</h2>
-          <p class="prices__cart-top-text">$1399</p>
+          <div class="prices__top-wrapper">
+            <h2 class="prices__cart-title">Экономный</h2>
+            <p class="prices__cart-top-text">$1399</p>
+          </div>
           <p class="prices__cart-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="prices__vantage">
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--rigth-one">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -447,7 +451,7 @@
               </div>
               <p class="prices__vantage-text">Разработанный маршрут с гидом группы</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--rigth-two">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -455,7 +459,7 @@
               </div>
               <p class="prices__vantage-text">Перелет и трансфер</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--rigth-three">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -463,7 +467,7 @@
               </div>
               <p class="prices__vantage-text">Проживание в хостелах при отелях</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--rigth-four">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -471,7 +475,7 @@
               </div>
               <p class="prices__vantage-text">Только завтраки в отелях</p>
             </li>
-            <li class="prices__vantage-item">
+            <li class="prices__vantage-item prices__vantage-item--rigth-five">
               <div class="prices__wrapper-svg">
                 <svg class="prices__svg-icon" role="img" width="22" height="22">
                   <use xlink:href="img/stack.svg#mark"></use>
@@ -493,7 +497,7 @@
             <div class="questions__wrapper-input">
               <label class="questions__label-phone" for="phone"><sup>*</sup></label>
               <input class="questions__form-input questions__form-input--phone" type="tel"
-                placeholder="+7 Введите 10 цифр номера" id="phone" name="phone" pattern="\+7\s?[0-9]{10}" required>
+                placeholder="+7   Введите 10 цифр номера" id="phone" name="phone" pattern="\+7\s?[0-9]{10}" required>
               <label class="questions__error" for="phone">Данные не верны</label>
             </div>
             <div class="questions__wrapper-input">
@@ -606,7 +610,8 @@
         <div class="popap-form__wrapper-input">
           <label class="popap-form__label-phone" for="popap-form-phone"><sup>*</sup></label>
           <input class="popap-form__form-input popap-form__form-input--phone" type="tel"
-            placeholder="+7 Введите 10 цифр номера" id="popap-form-phone" name="phone" pattern="\+7\s?[0-9]{10}" required>
+            placeholder="+7 Введите 10 цифр номера" id="popap-form-phone" name="phone" pattern="\+7\s?[0-9]{10}"
+            required>
           <label class="popap-form__error" for="phone">Данные не верны</label>
         </div>
         <div class="popap-form__wrapper-input">
