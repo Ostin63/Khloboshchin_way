@@ -16,6 +16,9 @@ const questionsForm = body.querySelector('.questions__form');
 const questionsPhoneField = questionsForm.querySelector('.questions__form-input--phone');
 const questionsMailField = questionsForm.querySelector('.questions__form-input--mail');
 const questionsFields = questionsForm.querySelector('.questions__form-input');
+const avatarTravels = body.querySelectorAll('.travels__item');
+const travelLinks = body.querySelectorAll('.travel-places__link');
+const travelCarts = body.querySelectorAll('.travel-places__item-cart');
 const dataSabmitUrl = 'https://echo.htmlacademy.ru/';
 const success = body.querySelector('#success')
   .content
@@ -81,7 +84,6 @@ const onSuccessRemove = () => {
   document.removeEventListener('click', onSuccessRemove);
 };
 
-
 const alertSuccess = () => {
   body.append(successElement);
   document.addEventListener('keydown', onElementEscRemove);
@@ -100,20 +102,20 @@ const alertForm = () => {
   resetForm();
 }
 
-const sendData = (url, bodyForm, alertSuccess, alertError) => {
+const sendData = (url, bodyForm, success, error) => {
   fetch(url, {
     method: 'POST',
     body: bodyForm,
   })
     .then((response) => {
       if (response.ok) {
-        alertSuccess();
+        success();
       } else {
-        alertError();
+        error();
       }
     })
     .catch(() => {
-      alertError();
+      error();
     });
 };
 
@@ -124,6 +126,32 @@ const onFormSend = (evt) => {
 
   sendData(dataSabmitUrl, formData, alertForm, alertError);
 };
+
+for (let i = 0; i < avatarTravels.length; i++) {
+  avatarTravels[i].addEventListener('click', () => {
+
+    for (let i = 0; i < avatarTravels.length; i++) {
+      travelCarts[i].classList.remove('travel-places__item-cart--active');
+      travelLinks[i].classList.remove('travel-places__link--active');
+    }
+
+    travelCarts[i].classList.add('travel-places__item-cart--active');
+    travelLinks[i].classList.add('travel-places__link--active');
+  });
+}
+
+for (let i = 0; i < travelLinks.length; i++) {
+  travelLinks[i].addEventListener('click', () => {
+
+    for (let i = 0; i < avatarTravels.length; i++) {
+      travelCarts[i].classList.remove('travel-places__item-cart--active');
+      travelLinks[i].classList.remove('travel-places__link--active');
+    }
+
+    travelCarts[i].classList.add('travel-places__item-cart--active');
+    travelLinks[i].classList.add('travel-places__link--active');
+  });
+}
 
 questionsForm.addEventListener('submit', onFormSend);
 popapForm.addEventListener('submit', onFormSend);

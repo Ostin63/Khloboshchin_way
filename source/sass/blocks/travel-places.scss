@@ -80,6 +80,7 @@
 .travel-places__link {
   text-decoration: none;
   color: var(--black-30);
+  cursor: pointer;
 
   &--active {
     color: var(--basic-pink);
