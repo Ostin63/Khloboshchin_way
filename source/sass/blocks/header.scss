@@ -87,6 +87,10 @@
     &:focus {
       color: var(--basic-pink);
     }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -106,6 +110,10 @@
     &:hover .header__svg-icon,
     &:focus .header__svg-icon {
       fill: var(--basic-pink);
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 }

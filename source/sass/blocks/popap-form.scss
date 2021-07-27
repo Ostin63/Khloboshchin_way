@@ -154,4 +154,8 @@
   &:focus {
     background: var(--basic-pink-hover);
   }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

@@ -7,7 +7,7 @@
     padding: 22px 21px 54px;
     display: grid;
     grid-template-columns: 1fr 331px;
-    grid-template-rows: 207px 155px;
+    grid-template-rows: max-content max-content;
   }
 
   @media (min-width: $desktop-width) {

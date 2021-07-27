@@ -1,7 +1,7 @@
 .promo {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
-  grid-template-rows: 235px 20px 108px 20px 50px;
+  grid-template-rows: 235px 20px max-content 20px 50px;
 
   &::before {
     content: "";
@@ -58,12 +58,12 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 398px 1fr;
-    grid-template-rows: 60px 45px 15px 76px 15px 50px 83px;
+    grid-template-rows: 60px 45px 15px max-content 10px 50px 83px;
   }
 
   @media (min-width: $desktop-width-onli) {
     grid-template-columns: 1fr 642px 412px 1fr;
-    grid-template-rows: 185px 159px 30px 76px 39px 75px 296px;
+    grid-template-rows: 185px 159px 30px max-content 33px 75px 296px;
   }
 }
 
@@ -137,6 +137,10 @@
   &:hover,
   &:focus {
     background: var(--basic-pink-hover);
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 
   &::after {
