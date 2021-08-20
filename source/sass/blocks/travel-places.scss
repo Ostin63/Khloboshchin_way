@@ -20,14 +20,16 @@
 }
 
 .travel-places__menu {
+  width: 100%;
   max-width: 902px;
   margin: 0;
   padding: 40px 0 18px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   list-style: none;
   border-bottom: $border-black-30;
   grid-column: 2 / -1;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -43,7 +45,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  display: none;
+  // display: none;
   letter-spacing: -0.415px;
   margin-left: 99px;
 
@@ -51,25 +53,25 @@
     margin-left: 0;
   }
 
-  &--greece {
-    display: block;
-  }
+  // &--greece {
+  //   display: block;
+  // }
 
-  &--albania {
-    display: block;
-  }
+  // &--albania {
+  //   display: block;
+  // }
 
-  &--macedonia {
-    @media (min-width: $mobile-width-onli) {
-      display: block;
-    }
-  }
+  // &--macedonia {
+  //   @media (min-width: $mobile-width-onli) {
+  //     display: block;
+  //   }
+  // }
 
-  &--montenegro {
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
+  // &--montenegro {
+  //   @media (min-width: $tablet-width) {
+  //     display: block;
+  //   }
+  // }
 
   &--croatia {
     @media (min-width: $desktop-width) {
