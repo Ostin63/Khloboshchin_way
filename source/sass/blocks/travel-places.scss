@@ -29,7 +29,8 @@
   list-style: none;
   border-bottom: $border-black-30;
   grid-column: 2 / -1;
-  overflow: hidden;
+  overflow: auto;
+  // overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
